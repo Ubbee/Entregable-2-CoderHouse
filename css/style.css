@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------BODY------------------------------------ */
+body {
+    background-color: #1A1A1A;
+}
+
+/* ------------------HEADER------------------- */
+header {
+    padding: 15px;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px 15px 25px;
+    border-bottom: 1px solid grey;
+}
+
+nav img {
+    justify-content: space-between;
+
+}
+
+nav ul li a {
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding-left: 45px;
+    font-size: 1.4rem;
+}
+
+nav ul {
+    display: flex;
+    padding-right: 73px;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown button img {
+    width: 23px;
+    height: 23px;
+}
+
+.dropdown-menu {
+    background-color: #262626;
+}
+
+.dropdown-menu li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- PSEUDO-CLASES DEL HEADER--- */
+nav ul li a:hover {
+    color: yellow;
+    transition: 1s;
+    margin: 5px;
+}
+
+.dropdown-menu li a:hover {
+    color: yellow;
+    background-color: #262626;
+    margin: 0;
+    transition: 1s;
+}
+
+
+/* MOBILE FIRST */
+@media screen and (max-width: 1100px) {
+    .dropdown {
+        display: flex;
+    }
+
+    nav ul li a {
+        display: none;
+    }
+
+}
+
+/* -----------------BODY/SECTION-------------------- */
+.container {
+    display: inline;
+}
+
+.ver-p {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .ver {
+    display: flex;
+    color: white;
+    padding: 17px;
+    border: 1px solid #80854A;
+    max-width: 1000px;
+    text-align: center;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    padding-left: 20px;
+    box-shadow: 0 0 20px 5px #80854A;
+}
+
+.container .ver p {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.container .ver a {
+    margin-left: 22px;
+    margin-right: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.ver img {
+    width: 40px;
+    height: 40px;
+}
+
+.tituloYp {
+    display: flexbox;
+    max-width: 1199px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tituloYp h1 {
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 4.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.tituloYp p {
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vivo {
+    color: yellow;
+}
+
+.botones {
+    padding-top: 30px;
+    display: flexbox;
+    text-align: center;
+}
+
+.botones button a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+
+.botones button {
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #c9db03;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: black;
+    border-radius: 7px;
+    justify-content: center;
+}
+
+.conoce img {
+    width: 40px;
+    height: 31px;
+    padding-bottom: 4px;
+}
+
+.conoce a {
+    text-decoration: none;
+    color: #D1E500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    border-top: 1px solid #2E2F36;
+    display: flex;
+    margin: 90px;
+    padding-top: 140px;
+    width: 1400px;
+    justify-content: center;
+}
+
+/* -----CARDS----- */
+
+.contenedor-cards {
+    display: flex;
+    justify-content: center;
+    padding-top: 125px;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 1400px;
+    padding: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    row-gap: 75px;
+    column-gap: 45px;
+}
+
+.grid-item {
+    background-color: beige;
+    border-radius: 6px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PSEUDO-CLASES DEL BODY/SECTION*/
+.botones button:hover {
+    background-color: #D1E500;
+    transition: 1s;
+}
+
+.container .ver:hover {
+    box-shadow: 0 0 40px 10px #80854A;
+    transition: 1s;
+}
+
+/* -----CARD 1-----*/
+.uno {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: #F4FF80;
+    /* overflow: auto; */
+}
+
+.uno h2 {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.uno p {
+    font-size: 2.3rem;
+}
+
+.uno img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -100px;
+    margin-left: 90px;
+}
+
+
+/* -----CARD 2----- */
+.dos {
+    grid-row: 1/4;
+    background-color: #FAFAFA;
+    padding: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dos h3 {
+    margin-top: 27px;
+    color: black;
+    font-size: 3.3rem;
+    font-weight: bolder;
+}
+
+.dos p {
+    color: rgb(109, 108, 108);
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+/* CARD 3 */
+.tres {
+    grid-column: 1/3;
+    background-color: #FAFAFA;
+    color: white;
+    /*overflow: auto;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tres h4 {
+    color: black;
+    font-size: 3.3rem;
+    font-weight: bolder;
+}
+
+.tres p {
+    color: rgb(109, 108, 108);
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+
+
+
+
+/* -----------------FOOTER-------------------- */
+footer {
+    margin-top: 100PX;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 0;
+    border-top: 1px solid grey;
+    width: 100%;
+    background-color: #1A1A1A;
+    padding: 20px;
+}
+
+footer img {
+    margin: 20px;
+}
+
+/* Generales */
+.logocoder {
+    width: 170px;
+
+}
