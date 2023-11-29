@@ -5,48 +5,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <!--link bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-
     <!--link css-->
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
-<body>
+<body class="body2">
     <!-- ---------------HEADER--------------- -->
-    <header class="container">
-        <nav>
-            <img src="assets/ch.svg" alt="">
+    <header class="container border-divLines">
+        <nav> <!-- Imagen y Titulos -->
+            <a href="../index.html"><img src="../assets/ch.svg" alt="logo coder" class="logocoder"></a>
             <ul>
-                <li><a href="">Cursos</a></li>
-                <li><a href="">Carreras</a></li>
-                <li><a href="">Carreras intensivas</a></li>
-                <li><a href="">Para empresas</a></li>
+                <li><a href="../html/Cursos.html">Cursos</a></li>
+                <li><a href="../html/carreras.html">Carreras</a></li>
+                <li><a href="../html/carrerasIntensivas.html">Carreras intensivas</a></li>
+                <li><a href="../html/paraEmpresas.html">Para empresas</a></li>
             </ul>
-
+            <!-- Menu Hamburguesa -->
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <img src="assets/icons8-menu-50.png" alt="">
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons8-menu-50.png" alt="menu hamburguesa">
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"><a href="">Cursos</a></a></li>
-                    <li><a class="dropdown-item" href="#"><a href="">Carreras</a></a></li>
-                    <li><a class="dropdown-item" href="#"><a href="">Carreras intensivas</a></a></li>
-                    <li><a class="dropdown-item" href="#"><a href="">Para empresas</a></a></li>
+                    <li><a class="dropdown-item" href="../html/Cursos.html">Cursos</a></li>
+                    <li><a class="dropdown-item" href="../html/carreras.html">Carreras</a></li>
+                    <li><a class="dropdown-item" href="../html/carrerasIntensivas.html">Carreras intensivas</a></li>
+                    <li><a class="dropdown-item" href="../html/paraEmpresas.html">Para empresas</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <!-- --------------BODY---------------- -->
     <section class="container">
-        
+        <div class="tituloYp vspace agranda">
+            <h1>Mejora el talento de tus colaboradores con cursos en vivo</h1>
+            <p class="p2">Conoce nuestros planes que se ajustan a tus necesidades y las de tu negocio.</p>
+        </div>
+
+        <div class="botones2 botones">
+            <button>
+                <a href="">Conocer planes</a>
+            </button>
+            <div class="conoce">
+                <a href="">Contactanos</a>
+                <img src="../assets/flecha.png" alt="">
+            </div>
+        </div>
+
+        <p class="p vspace">Estas empresas ya capacitan a su equipo con nosotros</p>
+
+        <div class="imagenes9">
+            <img src="../assets/cabify.svg" alt="">
+            <img src="../assets/falabella.svg" alt="">
+            <img src="../assets/accenture.svg" alt="">
+            <img src="../assets/ey.svg" alt="">
+            <img src="../assets/naranja.svg" alt="">
+            <img src="../assets/yamaha.svg" alt="">
+            <img src="../assets/u.svg" alt="">
+            <img src="../assets/cencosud.svg" alt="">
+            <img src="../assets/osde.svg" alt="">
+        </div>
+
+        <h2 class="h2Empresa">Elige el plan que se ajuste a tus necesidades</h2>
+
+        <!-- ----------------GRID-CONTAINER--------------- -->
+        <section class="contenedor-cards2">
+            <section class="grid-container empresa">
+
+                <div class="grid-item primero">
+                    <div class="imgyp">
+                        <img src="../assets/groupIcon.svg" alt="">
+                        <h3>Team </h3>
+                    </div>
+                    <p> <br>Inscribe a tus colaboradores en cursos y comisiones abiertas disponibles.</p>
+                    <button class="botones3">
+                        Contactanos
+                    </button>
+
+                    <div class="list">
+                        <div class="item1 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Cursos online en vivo</p>
+                        </div>
+
+                        <div class="item2 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Tutores a disposición todo el curso</p>
+                        </div>
+
+                        <div class="item3 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Corrección de entregas prácticas</p>
+                        </div>
+
+                        <div class="item4 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>
+                                Grabación de las clases en vivo</p>
+                        </div>
+
+                        <div class="item5 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Reportes del desempeño de tus colaboradores en el curso*</p>
+                        </div>
+                    </div>
+
+                    <p class="pLogos1">Empresas que eligieron este plan</p>
+                    <div class="logoss">
+                        <img src="../assets/osde.svg" alt="">
+                        <img src="../assets/13.svg" alt="">
+                        <img src="../assets/inter.svg" alt="">
+                    </div>
+                    <img src="../assets/patagonia.svg" alt="">
+
+                </div>
+
+                <div class="grid-item segundo">
+                    <div class="imgyp">
+                        <img src="../assets/estIcon.svg" alt="">
+                        <h4>Business</h4>
+                    </div>
+                    <p> <br>Armamos comisiones cerradas para tu equipo de nuestros cursos.</p>
+                    <button class="botones3">
+                        Contactanos
+                    </button>
+
+                    <div class="list">
+                        <div class="item1 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Todos los beneficios del Team</p>
+                        </div>
+
+                        <div class="item2 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Comisiones exclusivas para tu equipo</p>
+                        </div>
+
+                        <div class="item3 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Account Partner durante todo el proceso</p>
+                            <img src="../assets/cir.svg" alt="" class="limg">
+                        </div>
+                    </div>
+
+                    <p class="pLogos2">Empresas que eligieron este plan</p>
+                    <div class="logoss">
+                        <img src="../assets/cabify.svg" alt="">
+                        <img src="../assets/falabella.svg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="grid-item tercero">
+                    <div class="imgyp">
+                        <img src="../assets/coheteIcon.svg" alt="">
+                        <h5>Enterprise</h5>
+                    </div>
+                    <p> <br>Creamos un programa específico y adaptado a las necesidades de tu equipo.</p>
+                    <button class="botones3">
+                        Contactanos
+                    </button>
+
+                    <div class="list">
+                        <div class="item1 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Contenido creado a medida</p>
+                        </div>
+
+                        <div class="item2 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Expertos de las mejores empresas</p>
+                        </div>
+
+                        <div class="item3 listItem">
+                            <img src="../assets/tic.svg" alt="">
+                            <p>Account Partner durante todo el proceso</p>
+                            <img src="../assets/cir.svg" alt="" class="limg">
+                        </div>
+                    </div>
+
+                    <p class="pLogos3">Empresas que eligieron este plan</p>
+                    <div class="logoss">
+                        <img src="../assets/falabella.svg" alt="">
+                        <img src="../assets/inter.svg" alt="">
+                        <img src="../assets/patagonia.svg" alt="">
+                    </div>
+                    <img src="../assets/cerveceria.svg" alt="">
+                    <img src="../assets/whirpool.svg" alt="">
+
+                </div>
+            </section>
+        </section>
+
     </section>
 
     <footer>
-
+        <img src="../assets/ch.svg" alt="logoCoder" class="logocoder">
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
